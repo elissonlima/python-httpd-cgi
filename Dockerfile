@@ -11,5 +11,6 @@ COPY ./python-cgi /usr/local/my-site
 RUN chown -R www-data:www-data /usr/local/my-site
 
 RUN chmod +x /usr/local/my-site/*
+RUN chmod 777 /usr/local/my-site/lista_cidades.txt
 
 COPY ./cfg/my-httpd.conf /usr/local/apache2/conf/httpd.conf
